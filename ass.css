@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 100vh;
+    background-image: url(/images/Sally_Rose_Dolak_Tropical_Trendil_Treasure.jpeg);
+    background-repeat: no-repeat;
+
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.329);
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* text-align: center; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* gap: 30px; */
+}
+.btn1 {
+    width: 900px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: left;
+    /* padding-left: 20px; */
+}
+.btn2 {
+    /* text-align: center; */
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+}
+.child {
+    text-align: center;
+    padding-top: 150px;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+}
+p {
+    padding-top: 20px;
+    font-size: 30px;
+    /* width: 00px; */
+    color: white;
+}
+.btn3 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    margin-top: 40px;
+    border-radius: 4px;
+    
+}
+.end {
+    background-color: black;
+    position: relative;
+    top: 240px;
+    height: 50px;
+    /* padding:3px; */
+}
+.end a {
+    /* text-align: center; */
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.41);
+    
+}
+.end a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+@media screen and (max-width:600px) {
+    .btn1 {
+        display: none;
+
+    }
+    .btn2{
+        display: none;
+    }
+    
+    a {
+        border: 2px solid white;
+        padding: 5px;
+    }
+    p {
+        display: none;
+    }
+    .end {
+        height: 100%;
+    }
+    .end a{
+        display: block;
+        /* height: 100%; */
+    }
+}

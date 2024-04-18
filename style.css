@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* padding-left: 30px; */
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+.all{
+    display: flex;
+    gap: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    /* padding-top: 10px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* gap: none; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -10px;
+    background-color: #000000;
+    min-width: 200px;
+    min-height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* .navlinks  {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 40px;
+}  */
+.last {
+    display: flex;
+    gap: 50px;
+}
+.last a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.last h5 a{
+    color: rgba(220, 211, 211, 0.678);
+}
+.last h5 a:hover {
+    color: white;
+
+}
+h2{
+    text-align: center;
+    padding-top: 60px;
+}
+.shirts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-around; */
+    padding: 50px;
+    row-gap: 50px;
+}
+.shirts h4 {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.shirts p {
+    text-align: center;
+    padding-top: 10px;
+}
+.view {
+    /* background-color: black; */
+    text-align: center;
+}
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+.end {
+    background-color: #000000;
+    height: 100%;
+    text-align: center;
+    padding: 80px;
+    margin-top: 90px;
+    
+}
+.end a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    color: rgba(255, 255, 255, 0.447);
+    font-size: 15px;
+    padding-top: 100px;
+    padding-right: 60rem;
+}
+.toggle{
+    display: none;
+}
+@media screen and (max-width:465px){
+    html,body{
+        overflow-x: hidden;
+    }
+    nav{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+        /* display: none; */
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        /* gap: 60px; */
+    }
+    .all {
+        display: none;
+    }
+    .last{
+        display: none;
+    }
+    .shirts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .shirts div img{
+        width: 158px;
+        /* height: 300px; */
+    }
+    .hoodie{
+        width: 500px;
+        height: 40vh;
+    }
+    .hoodie img{
+        height: 200px;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+    .toggle img{
+        width: 40px;
+        height: 23px;
+        padding: 3px;
+        /* border:  2px solid yellow; */
+        color: white;
+    }
+}
